@@ -48,8 +48,8 @@
     <div class="text-center m-m scale" computer>
         <fieldset class="left-center border-light p r bg-blur grid-2 plr-l">
             <legend class="plr-m"><i onclick="$('view=0;')" class="fa absolute true-pos-search z-top fa-search m gray fa-lg"></i></legend>
-            <input type="text" class="plr-m m-m bg-blur no-bg border-light r karla p white" bind="toSearch" placeholder="Search for a game!"/><br>
-            <p react>{{showSearch}}</p>
+            <input type="text" class="plr-m m-m bg-blur no-bg border-light r karla p white" bind="toSearch" id="updateElement" placeholder="Search for a game!"/><br>
+            <div id="links"></div>
         </fieldset>
     </div>
 
@@ -58,8 +58,8 @@
     <script>
         let isPresent;
         let toShow;
+        let ljks = document.getElementById("links");
         function search(){
-            requestAnimationFrame(search);
             isPresent = games.filter(([name, _]) => name.toLowerCase().includes(data.toSearch.toLowerCase()));
             // console.log(isPresent)
             toShow = ""
@@ -67,17 +67,22 @@
                 for(let i=0;i<isPresent.length;i++){
                     toShow += `<a href="${isPresent[i][1]}" class="grad-bottom">${isPresent[i][0]}</a><br/>`
                 }
-                data.showSearch = toShow;
+                ljks.innerHTML = toShow;
             }else{
                 toShow = "";
-                data.showSearch = ""
+                ljks.innerHTML = ""
             }
             // if(isPresent!=-1){
             //     data.showSearch = `<a href="${games[isPresent][1]}" class="grad-bottom">${games[isPresent][0]}</a>`
             // }else if(data.showSearch!=""){
             //     data.showSearch = "";
             // }
-        };search();
+        }
+        document.getElementById("updateElement").addEventListener('input',function(evt){
+            setTimeout(()=>{
+                search();
+            },0);
+        })
     </script>
 
     <!-- <canvas id="myCanvas"></canvas>

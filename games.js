@@ -1,5 +1,5 @@
 let games = [
-    ["Doom","./games/doom.html"],
+    ["Doom","https://nueot-437a9.web.app/games/doom.html"],
     ["FF 1&2 Advance","https://nueot-437a9.web.app/games/ff12.html"],
     ["FFV Advance","https://nueot-437a9.web.app/games/ffv.html"],
     ["Leafgreen","https://nueot-437a9.web.app/games/lg.html"],
