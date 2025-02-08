@@ -55,6 +55,10 @@
         </fieldset>
     </div>
 
+    <!-- <canvas id="myCanvas"></canvas>
+    <script src="./moss.js"></script>
+    <script src="./snow.js"></script> -->
+
     <script src="./games.js"></script>
     <script src="./crystalErrorBind.js"></script>
     <script>
@@ -74,11 +78,11 @@
                 toShow = "";
                 ljks.innerHTML = ""
             }
-            // if(isPresent!=-1){
-            //     data.showSearch = `<a href="${games[isPresent][1]}" class="grad-bottom">${games[isPresent][0]}</a>`
-            // }else if(data.showSearch!=""){
-            //     data.showSearch = "";
-            // }
+            if(isPresent!=-1){
+                data.showSearch = `<a href="${games[isPresent][1]}" class="grad-bottom">${games[isPresent][0]}</a>`
+            }else if(data.showSearch!=""){
+                data.showSearch = "";
+            }
         }
         document.getElementById("updateElement").addEventListener('input',function(evt){
             setTimeout(()=>{
@@ -86,9 +90,5 @@
             },0);
         })
     </script>
-
-    <!-- <canvas id="myCanvas"></canvas>
-    <script src="./moss.js"></script>
-    <script src="./snow.js"></script> -->
 </body>
 </html>
