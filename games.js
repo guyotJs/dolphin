@@ -49,6 +49,8 @@ let games = [
     ["Riddle School 2","https://guyotjs.github.io/flash/games/rs1.html"],
     ["Riddle School 3","https://guyotjs.github.io/flash/games/rs3.html"],
     ["Fancy Pants Adventure","https://guyotjs.github.io/flash/games/fpa.html"],
+    ["Fancy Pants Adventure 2","https://guyotjs.github.io/flash/games/fpa2.html"],
+    ["Fancy Pants Adventure 3","https://guyotjs.github.io/flash/games/fpa3.html"],
     ["Breaking the Bank","https://guyotjs.github.io/flash/games/btb.html"],
     ["Escaping the Prison","https://guyotjs.github.io/flash/games/etp.html"],
     ["Stealing the Diamond","https://guyotjs.github.io/flash/games/std.html"],
