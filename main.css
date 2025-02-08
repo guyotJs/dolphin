@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+body{
+    margin:0;
+    padding:0;
+    overflow-x: hidden;
+    color:white;
+    background-image: url(https://guyotjs.github.io/consoles/gbDark.png);
+    background-color:rgba(36,36,36,0.9);background-blend-mode:darken;background-repeat:no-repeat;background-size:cover;background-position:center center;background-attachment:fixed!important
+}
+.f-xxl{
+    font-size: 80px;
+}
+.f-responsive{
+    font-size: 17px;
+    white-space: nowrap;
+}
+b{
+    font-weight: 600;
+}
+.z-top{
+    z-index: 10;
+}
+.scale{
+  scale: 1.3;
+}
+.bg-blur{
+    backdrop-filter: blur(5px);
+}
+.fw-strong,.hover-fw-strong:hover{
+    font-weight: 900;
+}
+.border-light{
+    border: 1px solid gray;
+}
+.border-right-light{
+    border-right: 1px solid gray;
+}
+.border-bottom-light{
+    border-bottom: 1px solid gray;
+}
+.plr-l{
+    padding-left: 32px;
+    padding-right: 32px;
+}
+.incl{
+    width:300px;
+    padding:0;
+    height:120px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+.plr-m{
+    padding-left: 16px;
+    padding-right: 16px;
+}
+.true-pos{
+    transform: translate(-17.5px,-14px);
+}
+.fa-gamepad{
+    background-color: #242424;
+}
+.karla{
+    font-family: "Karla";
+}
+.fa-twitter:hover{
+  color:skyblue;
+}
+.fa-github:hover{
+    color:skyblue;
+}
+.pointer{
+    cursor: pointer;
+}
+.prevent-select {
+    -webkit-user-select: none;
+    user-select: none;
+}
+.grad{
+    background-image: linear-gradient(to right, lightblue,rgb(230, 124, 230));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    white-space: nowrap;
+    background-size: 200%;
+}
+.grad-bottom{
+    background-image: linear-gradient(to right, lightblue,rgb(230, 124, 230));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    white-space: nowrap;
+    background-size: 200%;
+    margin:0;
+    border-bottom: 1px solid rgba(173,216,230,0);
+}
+.grad-bottom:hover{
+    border-bottom:1px solid rgb(173, 216, 230);
+}
+#myCanvas{
+    position:fixed;
+    z-index:-1000;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+}
