@@ -57,6 +57,12 @@ b{
 .true-pos{
     transform: translate(-17.5px,-14px);
 }
+.true-pos-search{
+    transform: translate(-14.5px,-14px);
+}
+.no-bg{
+    background-color: rgba(0,0,0,0);
+}
 .karla{
     font-family: "Karla";
 }

@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="./main.css">
 </head>
-<body data='{view:0}' id="body">
+<body data='{view:0,toSearch:"",showSearch:""}' id="body">
 
     <div class="p-m">
         <a href="https://github.com/guyotjs/"><i class="fa-lg white fa m-m fa-github"></i></a>
@@ -44,9 +44,30 @@
                 <div style="margin-bottom: 0px;"></div>
         </fieldset>
     </div>
+    <br><br><br><br><br><br><br><br><br>
+    <div class="text-center m-m scale" computer>
+        <fieldset class="left-center border-light p r bg-blur grid-2 plr-l">
+            <legend class="plr-m"><i onclick="$('view=0;')" class="fa absolute true-pos-search z-top fa-search m gray fa-lg"></i></legend>
+            <input type="text" class="plr-m m-m bg-blur no-bg border-light r karla p white" bind="toSearch" placeholder="Search for a game!"/><br>
+            <p react>{{showSearch}}</p>
+        </fieldset>
+    </div>
 
+    <script src="./games.js"></script>
+    <script src="./crystalErrorBind.js"></script>
+    <script>
+        let isPresent;
+        function search(){
+            requestAnimationFrame(search);
+            isPresent = games.findIndex(([name, _]) => name.toLowerCase() === data.toSearch.toLowerCase());
+            if(isPresent!=-1){
+                data.showSearch = `<a href="${games[isPresent][1]}" class="grad-bottom">${games[isPresent][0]}</a>`
+            }else if(data.showSearch!=""){
+                data.showSearch = "";
+            }
+        };search();
+    </script>
 
-    <script src="https://snojs.github.io/sno/crystal.js"></script>
     <!-- <canvas id="myCanvas"></canvas>
     <script src="./moss.js"></script>
     <script src="./snow.js"></script> -->
