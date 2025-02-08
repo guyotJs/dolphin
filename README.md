@@ -1,4 +1,4 @@
-# Guyot Project Dolphin
+# Project Dolphin
 
 > GuyotJS version 24 (XXIV)
 
