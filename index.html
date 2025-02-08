@@ -57,14 +57,26 @@
     <script src="./crystalErrorBind.js"></script>
     <script>
         let isPresent;
+        let toShow;
         function search(){
             requestAnimationFrame(search);
-            isPresent = games.findIndex(([name, _]) => name.toLowerCase() === data.toSearch.toLowerCase());
-            if(isPresent!=-1){
-                data.showSearch = `<a href="${games[isPresent][1]}" class="grad-bottom">${games[isPresent][0]}</a>`
-            }else if(data.showSearch!=""){
-                data.showSearch = "";
+            isPresent = games.filter(([name, _]) => name.toLowerCase().includes(data.toSearch.toLowerCase()));
+            // console.log(isPresent)
+            toShow = ""
+            if(data.toSearch!=""){
+                for(let i=0;i<isPresent.length;i++){
+                    toShow += `<a href="${isPresent[i][1]}" class="grad-bottom">${isPresent[i][0]}</a><br/>`
+                }
+                data.showSearch = toShow;
+            }else{
+                toShow = "";
+                data.showSearch = ""
             }
+            // if(isPresent!=-1){
+            //     data.showSearch = `<a href="${games[isPresent][1]}" class="grad-bottom">${games[isPresent][0]}</a>`
+            // }else if(data.showSearch!=""){
+            //     data.showSearch = "";
+            // }
         };search();
     </script>
 
