@@ -64,4 +64,5 @@ let games = [
     ["Super Smash Flash","https://guyotjs.github.io/flash/games/ssf.html"],
     ["The Binding of Issac","https://guyotjs.github.io/flash/games/tboi.html"],
     ["The World's Hardest Game","https://guyotjs.github.io/flash/games/twhg.html"],
+    ["Run","https://guyotjs.github.io/flash/games/run.html"],
 ]
