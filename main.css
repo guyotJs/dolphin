@@ -33,6 +33,13 @@ b{
 .border-light{
     border: 1px solid gray;
 }
+hr{
+    border:none;
+    margin-top:50px;
+}
+.true-width{
+    width:389px;
+}
 .border-right-light{
     border-right: 1px solid gray;
 }
@@ -43,12 +50,18 @@ b{
     padding-left: 32px;
     padding-right: 32px;
 }
+.hover-underline:hover{
+    text-decoration: underline;
+}
 .incl{
     width:300px;
     padding:0;
-    height:120px;
+    height:145px;
     overflow-x: hidden;
     overflow-y: scroll;
+}
+.new-height{
+    margin-top:20px;
 }
 .plr-m{
     padding-left: 16px;
@@ -56,6 +69,9 @@ b{
 }
 .true-pos{
     transform: translate(-17.5px,-14px);
+}
+.true-pos-file{
+    transform: translate(-14.5px,-14px);
 }
 .true-pos-search{
     transform: translate(-14.5px,-14px);
