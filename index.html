@@ -19,12 +19,19 @@
         <a href="https://x.com/westonschnee"><i class="fa-lg white fa m-m fa-twitter"></i></a>
     </div>
     
-    <div class="text-center m">
+    <div class="text-center m"><br>
         <p class="f-xxl karla fw-strong bold"><span class="grad fw-strong karla prevent-select">Guyot</span></p><br/>
     </div>
 
     <br>
-
+    <div class="text-center m-m scale" style="position:relative;z-index:10000;" computer>
+        <fieldset class="left-center border-light p r bg-blur grid-2 plr-l" >
+            <legend class="plr-m"><i onclick="$('view=0;')" class="fa absolute true-pos-search z-top fa-search m gray fa-lg"></i></legend>
+            <input type="text" class="plr-m m-m bg-blur no-bg border-light r karla p white" bind="toSearch" id="updateElement" placeholder="Search for a game!"/><br>
+            <div id="links"></div>
+        </fieldset>
+    </div>
+    <br><br><br><br><br>
     <div class="text-center m-m scale" computer>
         <fieldset class="left-center border-light p r bg-blur grid-2">
             <legend class="plr-m"><i onclick="$('view=0;')" class="fa absolute true-pos z-top fa-gamepad m gray fa-lg"></i></legend>
@@ -34,32 +41,21 @@
                     <div if="view==2"><div class="incl" incl="./mode/snes.html"></div></div>
                     <div if="view==3"><div class="incl" incl="./mode/gba.html"></div></div>
                     <div if="view==4"><div class="incl" incl="./mode/flash.html"></div></div>
-                    <div if="view==5"><div class="incl" incl="./mode/apps.html"></div></div>
                 </div>
                 <div class="plr-l p-m">
                     <span onclick="$('view=1;')" class="grad point hover-fw-strong hover-f-m karla">N64</span><br>
                     <span onclick="$('view=2;')" class="grad point hover-fw-strong hover-f-m karla">SNES</span><br>
                     <span onclick="$('view=3;')" class="grad point hover-fw-strong hover-f-m karla">GBA</span><br>
-                    <span onclick="$('view=4;')" class="grad point hover-fw-strong hover-f-m karla">FLASH</span><br>
-                    <span onclick="$('view=5;')" class="grad point hover-fw-strong hover-f-m karla">APPS</span>
-                    
+                    <span onclick="$('view=4;')" class="grad point hover-fw-strong hover-f-m karla">FLASH</span><br>                    
                 </div>
                 <div style="margin-bottom: 0px;"></div>
         </fieldset>
     </div>
-    <!-- <br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br>
     <div class="text-center m-m scale" computer>
-        <fieldset class="left-center border-light p-m r bg-blur true-width">
+        <fieldset class="left-center border-light pb-s r bg-blur true-width">
             <legend class="plr-m"> <i class="fa absolute true-pos-file z-top fa-file-text m gray fa-lg"></i></legend>
             <div class="text-center" incl="./mode/apps.html"></div>
-        </fieldset>
-    </div> -->
-    <br><br><br><br><br><br><br><br><br><br>
-    <div class="text-center m-m scale" computer>
-        <fieldset class="left-center border-light p r bg-blur grid-2 plr-l">
-            <legend class="plr-m"><i onclick="$('view=0;')" class="fa absolute true-pos-search z-top fa-search m gray fa-lg"></i></legend>
-            <input type="text" class="plr-m m-m bg-blur no-bg border-light r karla p white" bind="toSearch" id="updateElement" placeholder="Search for a game!"/><br>
-            <div id="links"></div>
         </fieldset>
     </div>
 
